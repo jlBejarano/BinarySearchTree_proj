@@ -11,14 +11,5 @@ namespace BinarySearchTree
         public int data;
         public Node leftChild;
         public Node rightChild;
-
-        internal void Add(int v)
-        {
-            
-        }
     }
-
-
-
-    
 }

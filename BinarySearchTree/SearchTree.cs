@@ -9,76 +9,25 @@ namespace BinarySearchTree
 {
     public class SearchTree
     {
-        Node root;
-      
-
-        public SearchTree()
+        public Node root = null;
+        public void Add(Node leftChild, Node rightChild, int data )
         {
-            root = null;
-            Node node;
-        }
-
-        public void Add(int data)
-        {
-            Node newNode = new Node();
+            //root = null;
+            Node node = new Node();
+            node.data = data;
 
             if (root == null)
             {
-                root = newNode;
+                root = new Node();
+                root.data = data;
             }
-
-            
-        }
-
-        public void Bool (int data)
-        {
-            SearchTree searchTree = new SearchTree();
-
-            searchTree.Add(8);
-            searchTree.root.leftChild.Add(4);
-            searchTree.root.leftChild.Add(6);
-            searchTree.root.leftChild.Add(10);
-            searchTree.root.leftChild.Add(12);
-            searchTree.root.rightChild.Add(15);
-            searchTree.root.rightChild.Add(20);
-            searchTree.root.rightChild.Add(30);
-            searchTree.root.rightChild.Add(40);
-
-            if ()
+            else if (root.data > data)
             {
-
+                root.rightChild = new node (root.rightChild, data);
             }
-
-
-
-            
-
-            
-             
-            
-           
-            
-
-            
         }
-
-
-        
-
-        
-        
-
-        
-        
-
-       
-        
-           
-        
-
-
-
     }
+}
 
     
-}
+
